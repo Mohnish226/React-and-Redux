@@ -1,5 +1,5 @@
 {
-  "name": "01-test_app",
+  "name": "02-bmi-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
