@@ -51,15 +51,10 @@ export default class DummytextControl extends Component{
     }
 
     gettext(para,html){
-        //let paras = para;//Number(this.state.paragraphs) + Number(1);
         let url1 = "https://baconipsum.com/api/?type=meat-and-filler&paras=";
-        let url = "";
-        if(Boolean(html)){
-            url = url1 + para + "&format=html"
-        }
-        else{
-            url = url1 + para;
-        }
+        let url = Boolean(html) ? url1 + para + "&format=html"
+                : url1 + para;
+
         console.log("paras is "+ para);
 
         console.log(url);
