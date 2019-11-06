@@ -55,16 +55,16 @@ export default class DummytextControl extends Component{
         let url = Boolean(html) ? url1 + para + "&format=html"
                 : url1 + para;
 
-        console.log("paras is "+ para);
+        //console.log("paras is "+ para);
 
-        console.log(url);
+        //console.log(url);
         fetch(url).then(function(response){
             return response.json();
         })
             .then(function (myJson) {
                 //let text = JSON.stringify(myJson);
                 //console.log(JSON.stringify(myJson))
-                console.log(typeof myJson);
+                //console.log(typeof myJson);
                 if(Boolean(html)){
                     document.getElementById("data").innerHTML = myJson;
                     return
